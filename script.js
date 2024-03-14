@@ -35,10 +35,10 @@ function scaleCricle(){
 
         // scale the value to its original size
         timeout = setTimeout(function(){
-            var cursor = window.querySelector("#circle");
-            cursor.style.transform = `translate(${dets.clientX}px, ${dets.clientY}px) scale(1, 1)`;
+            var circle = window.querySelector("#circle");
+            circle.style.transform = `translate(${dets.clientX}px, ${dets.clientY}px) scale(1, 1)`;
         }, 100);
-    })
+    });
 }
 
 // movement of circle with cursor

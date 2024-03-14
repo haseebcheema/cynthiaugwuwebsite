@@ -121,12 +121,31 @@ head, body{
 
 #herofooter a{
     text-decoration: none;
+    position: relative;
 }
 
 #footerlinks{
     width: 58%;
     display: flex;
     justify-content: space-between;
+}
+
+#herofooter a::after{
+    content: '';
+    position: absolute;
+    width: 98%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: -30%;
+    left: 0;
+    background-color: #fff;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+#herofooter a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 #arrowdownicons{
@@ -230,6 +249,12 @@ head, body{
     padding: 5px 10px;
 }
 
+#about #abouttext a:hover{
+    background-color: #fff;
+    color: #000;
+    transition: all ease-in-out 0.6s;
+}
+
 #subscribe{
     width: 100%;
     height: 20vh;
@@ -245,6 +270,26 @@ head, body{
 
 #subscribe h4{
     font-weight: 100;
+    width: fit-content;
+    position: relative;
+}
+
+#subscribe h4::after{
+    content: '';
+    position: absolute;
+    width: 99%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: -40%;
+    left: 0;
+    background-color: #fff;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+#subscribe h4:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 #footer{
@@ -276,4 +321,26 @@ head, body{
     justify-content: space-between;
     align-items: center;
     gap: 40px;
+}
+
+#right h4{
+    position: relative;
+}
+
+#right h4::after{
+    content: '';
+    position: absolute;
+    width: 99%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: -20%;
+    left: 0;
+    background-color: #fff;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+#right h4:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
