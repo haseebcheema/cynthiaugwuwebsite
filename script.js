@@ -24,3 +24,9 @@ tl.to(".boundingelem", {
     duration: 1,
     stagger: 0.2
 })
+
+tl.from("#herofooter",{
+    y: 10,
+    opacity: 0,
+    duration: 1
+})
