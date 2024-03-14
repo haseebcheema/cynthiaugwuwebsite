@@ -16,7 +16,7 @@ function scaleCricle(){
     var xprev = 0;
     var yprev = 0;
 
-    window.addEventListener("mousemove", function(dets){
+    document.addEventListener("mousemove", function(dets){
         
         // cancel the execution of setTimeout function when cursor moves again
         clearTimeout(timeout);
@@ -35,7 +35,7 @@ function scaleCricle(){
 
         // scale the value to its original size
         timeout = setTimeout(function(){
-            var circle = window.querySelector("#circle");
+            var circle = document.querySelector("#circle");
             circle.style.transform = `translate(${dets.clientX}px, ${dets.clientY}px) scale(1, 1)`;
         }, 100);
     });
@@ -43,7 +43,7 @@ function scaleCricle(){
 
 // movement of circle with cursor
 function movingCircle(xscale, yscale){
-    window.addEventListener("mousemove", function(dets){
+    document.addEventListener("mousemove", function(dets){
         var circle = document.querySelector("#circle");
         circle.style.transform = `translate(${dets.clientX - 6}px, ${dets.clientY - 6}px) scale(${xscale}, ${yscale})`;
     });
