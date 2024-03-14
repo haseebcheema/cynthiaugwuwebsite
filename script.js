@@ -34,8 +34,8 @@ function scaleCricle(){
         movingCircle(xscale, yscale);
 
         // scale the value to its original size
-        timeout = setTimeout(() => {
-            var cursor = window.querySelector("#cursor");
+        timeout = setTimeout(function(){
+            var cursor = window.querySelector("#circle");
             cursor.style.transform = `translate(${dets.clientX}px, ${dets.clientY}px) scale(1, 1)`;
         }, 100);
     })
