@@ -128,12 +128,8 @@ head, body{
     height: 120vh;
     background-color: #000;
     padding-top: 7vw;
-    padding-left: 33px;
-    padding-right: 150px;
-}
-
-#middlepage #cards{
-    
+    padding-left: 2.5vw;
+    padding-right: 11vw;
 }
 
 #middlepage #cards .elem{
@@ -165,4 +161,5 @@ head, body{
     position: absolute;
     height: 140%;
     z-index: 100;
+    display: none;
 }
