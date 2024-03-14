@@ -22,6 +22,16 @@ head, body{
     transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
 }
 
+.bounding{
+    /* background-color: palevioletred; */
+    width: fit-content;
+    overflow: hidden;
+}
+
+.bounding .boundingelem{
+    transform: translateY(100%);
+}
+
 #main{
     width: 100%;
     background-color: #000;
@@ -69,7 +79,9 @@ head, body{
     width: fit-content;
     margin-left: 10.5vw;
     margin-top: -3vw;
-    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
 }
 
 #headings #subheadings h1{
@@ -86,8 +98,10 @@ head, body{
 #moreheadings{
     margin-top: 11vw;
     margin-right: 2.7vw;
-    text-align: right;
     line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
 }
 
 #moreheadings h5{
