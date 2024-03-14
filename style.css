@@ -147,7 +147,7 @@ head, body{
     left: 0;
     background-color: #fff;
     transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
+    transition: transform 0.3s ease-out;
 }
 
 #herofooter a:hover::after {
@@ -176,7 +176,7 @@ head, body{
     color: #000;
     font-weight: 900;
     transform: translateY(-50%);
-    transition: all ease 0.5s;
+    transition: all ease 0.4s;
 }
 
 #arrowdownicons #arrowcircle:hover i{
@@ -303,7 +303,7 @@ head, body{
     left: 0;
     background-color: #fff;
     transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
+    transition: transform 0.3s ease-out;
 }
 
 #subscribe h4:hover::after {
@@ -356,7 +356,7 @@ head, body{
     left: 0;
     background-color: #fff;
     transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
+    transition: transform 0.3s ease-out;
 }
 
 #right h4:hover::after {
