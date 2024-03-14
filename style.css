@@ -181,6 +181,7 @@ head, body{
 
 #arrowdownicons #arrowcircle:hover i{
     transform: translateY(60%);
+    cursor: pointer;
 }
 
 #middlepage{
