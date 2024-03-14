@@ -28,7 +28,7 @@ head, body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 45px 40px;
+    padding: 30px 30px;
 }
 
 #nav a{
@@ -47,7 +47,7 @@ head, body{
 }
 
 #headings h1{
-    font-size: 10vmax;
+    font-size: 11vw;
     font-weight: 500;
     opacity: 0.6;
 }
@@ -60,35 +60,36 @@ head, body{
 }
 
 #headings #subheadings h1{
-    font-size: 10vmax;
+    font-size: 11vw;
     font-weight: 500;
     opacity: 0.65;
 }
 
 #headings #subheadings h5{
     font-weight: 500;
-    font-size: 1vw;
+    font-size: 1.2vw;
 }
 
 #moreheadings{
-    margin-top: 9.5vw;
+    margin-top: 11vw;
     margin-right: 2.7vw;
     text-align: right;
-    line-height: 2;
+    line-height: 1.5;
 }
 
 #moreheadings h5{
     font-weight: 500;
-    font-size: 1vw;
+    font-size: 1.2vw;
 }
 
 #herofooter{
     position: absolute;
     width: 100%;
+    bottom: -10%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1vw 2.5vw;
+    padding: 3vw 2.5vw;
 }
 
 #herofooter a{
