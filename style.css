@@ -202,3 +202,20 @@ head, body{
     border-radius: 30px;
     padding: 5px 10px;
 }
+
+#subscribe{
+    width: 100%;
+    height: 20vh;
+    background-color: #000;
+    padding-left: 2.5vw;
+}
+
+#subscribe h5{
+    font-weight: 100;
+    opacity: 0.6;
+    margin-bottom: 0.5vw;
+}
+
+#subscribe h4{
+    font-weight: 100;
+}
