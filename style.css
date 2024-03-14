@@ -134,6 +134,7 @@ head, body{
     width: 58%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 #herofooter a::after{
@@ -184,7 +185,7 @@ head, body{
     padding-right: 11vw;
 }
 
-#middlepage #cards .elem{
+#middlepage .elem{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -193,28 +194,27 @@ head, body{
     position: relative;
 }
 
-
-#middlepage #cards .elem h1{
+#middlepage .elem h1{
     text-transform: uppercase;
     font-size: 7vw;
     opacity: 0.6;
     font-weight: 500;
 }
 
-#middlepage #cards .elem h5{
+#middlepage .elem h5{
     font-size: 16px;
     font-weight: 100;
 }
 
-#middlepage #cards .elem:nth-child(3){
+#middlepage .elem:nth-child(3){
     border-bottom: 1px solid #fff;
 }
 
-#middlepage #cards .elem img{
+#middlepage .elem img{
     position: absolute;
     height: 140%;
     z-index: 99;
-    display: none;
+    opacity: 0;
 }
 
 #about{
@@ -342,7 +342,7 @@ head, body{
 #right h4::after{
     content: '';
     position: absolute;
-    width: 99%;
+    width: 100%;
     transform: scaleX(0);
     height: 1px;
     bottom: -20%;

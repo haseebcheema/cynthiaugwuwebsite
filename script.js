@@ -71,7 +71,51 @@ function firstPageAnim(){
     });
 }
 
+function previewImages(){
+    var cards = document.querySelectorAll(".elem");
+    cards.forEach(function(elem){
+    
+    // variables for rotation
+    var diffX = 0;
+    var xprev = 0;
+
+    // event listener for mouse move
+    elem.addEventListener("mousemove", function(dets){
+        
+        // difference of current vertical position of cursor from top and elements's current vertical position from top
+        // this will help us to determine the top position of our image and to not let the image get out of the element
+        var diffY = dets.clientY - elem.getBoundingClientRect().top;
+        
+        // this difference will give us the value that we will use for rotation
+        var diffX = dets.clientX - xprev;
+        xprev = dets.clientX;
+
+        // gsap animation for image
+        gsap.to(elem.querySelector("img"), {
+            opacity: 1,
+            top: `${diffY} - 150px`,
+            left: dets.clientX - 240,
+            rotate: gsap.utils.clamp(-20, 20, diffX),
+            ease: Power3,
+            cursor: "pointer"
+        });
+    });
+
+    // event listener for mouse leave
+    elem.addEventListener("mouseleave", function(dets){
+        // gsap animation to remove image
+        gsap.to(elem.querySelector("img"), {
+            opacity: 0,
+            ease: Power3,
+            duration: 0.5
+        });
+    });
+
+});
+}
+
 //calling functions
 scaleCricle();
 movingCircle();
 firstPageAnim();
+previewImages();
