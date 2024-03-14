@@ -65,11 +65,13 @@ head, body{
 #nav h4{
     font-family: "General Sans Regular";
     font-weight: 100;
+    cursor: pointer;
 }
 
 #headings{
     margin-top: 75px;
     margin-left: 35px;
+    cursor: context-menu;
 }
 
 #headings h1{
@@ -105,6 +107,7 @@ head, body{
     display: flex;
     flex-direction: column;
     align-items: end;
+    cursor: context-menu;
 }
 
 #moreheadings h5{
@@ -242,6 +245,7 @@ head, body{
 #about #abouttext p{
     line-height: 2vw;
     margin-bottom: 1.5vw;
+    cursor: context-menu;
 }
 
 
@@ -251,7 +255,7 @@ head, body{
     border-radius: 30px;
     padding: 5px 10px;
 }
-
+ 
 #about #abouttext a:hover{
     background-color: #fff;
     color: #000;
@@ -269,12 +273,14 @@ head, body{
     font-weight: 100;
     opacity: 0.6;
     margin-bottom: 0.5vw;
+    cursor: context-menu;
 }
 
 #subscribe h4{
     font-weight: 100;
     width: fit-content;
     position: relative;
+    cursor: pointer;
 }
 
 #subscribe h4::after{
@@ -310,12 +316,12 @@ head, body{
     font-weight: 100;
 }
 
-
 #footer #left{
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 20px;
+    cursor: context-menu;
 }
 
 #footer #right{
@@ -327,6 +333,7 @@ head, body{
 
 #right h4{
     position: relative;
+    cursor: pointer;
 }
 
 #right h4::after{
