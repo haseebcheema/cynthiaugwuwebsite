@@ -219,3 +219,33 @@ head, body{
 #subscribe h4{
     font-weight: 100;
 }
+
+#footer{
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1vw;
+    padding-left: 2.5vw;
+    padding-right: 3vw;
+}
+
+#footer h4{
+    font-weight: 100;
+}
+
+
+#footer #left{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+#footer #right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
