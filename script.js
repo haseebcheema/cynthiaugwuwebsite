@@ -117,5 +117,5 @@ function previewImages(){
 //calling functions
 scaleCricle();
 movingCircle();
-firstPageAnim();
+// firstPageAnim();
 previewImages();

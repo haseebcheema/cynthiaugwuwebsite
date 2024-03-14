@@ -159,13 +159,9 @@ head, body{
     display: flex;
 }
 
-#arrowdownicons #arrowcircle i{
-    color: #000;
-    font-weight: 500;
-}
-
 #arrowdownicons #arrowcircle{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 25px;
@@ -174,6 +170,17 @@ head, body{
     background-color: #fff;
     opacity: 0.6;
     margin-left: 2px;
+}
+
+#arrowdownicons #arrowcircle i{
+    color: #000;
+    font-weight: 900;
+    transform: translateY(-50%);
+    transition: all ease 0.5s;
+}
+
+#arrowdownicons #arrowcircle:hover i{
+    transform: translateY(60%);
 }
 
 #middlepage{
