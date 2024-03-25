@@ -364,3 +364,126 @@ head, body{
     transform: scaleX(1);
     transform-origin: bottom left;
 }
+
+/* adding responsiveness using media queries */
+@media (max-width: 600px) {
+    #nav{
+        height: 60px;
+        padding: 10px 20px;
+    }
+    
+    #nav a{
+        font-size: 3.5vw;
+    }
+    
+    #nav h4{
+        font-size: 3.5vw;
+    }
+
+    #headings{
+        margin-top: 60vw;
+        margin-left: 18px;
+    }
+    
+    #headings h1{
+        font-size: 12vw;
+    }
+    
+    #headings #subheadings h5{
+        font-size: 3.4vw;
+    }
+    
+    #moreheadings{
+        margin-top: 7.5vw;
+        margin-right: 2.7vw;
+        line-height: 1.4;
+    }
+    
+    #moreheadings h5{
+        font-size: 3vw;
+    }
+    
+    #herofooter{
+        bottom: 8%;
+        padding: 3vw 2.5vw;
+    }
+    
+    #herofooter a{
+        font-size: 3vw;
+    }
+    
+    #middlepage{
+        height: 55vh;
+        padding-left: 2.5vw;
+        padding-right: 2.5vw;
+        padding-top: 20vw;
+    }
+
+    #middlepage .elem{
+        padding: 9vw 0;
+    }
+    
+    #middlepage .elem h1{
+        font-size: 9vw;
+    }
+
+    #about{
+        height: 90vh;
+        padding: 0 2.5vw;
+        gap: 10px;
+    }
+    
+    #about img{
+        height: 130px;
+    }
+    
+    #about #abouttext{
+        width: 60vw;
+    }
+    
+    #about #abouttext h5{
+        margin-bottom: 1.5vw;
+        font-size: 3.5vw;
+    }
+    
+    #about #abouttext p{
+        line-height: 3.8vw;
+        margin-bottom: 3vw;
+        font-size: 3.5vw;
+    }
+    
+    #about #abouttext a{
+        font-size: 3.5vw;
+        padding: 3px 6px;
+    }
+    
+    #subscribe{
+        height: 10vh;
+        padding: 0 2.5vw;
+    }
+    
+    #subscribe h5{
+        font-size: 3vw;
+    }
+    
+    #subscribe h4{
+        font-size: 3.5vw;
+    }
+    
+    #footer{
+        padding: 0 2.5vw;
+        height: 4vh;
+    }
+    
+    #footer #left{
+        display: none;
+    }
+    
+    #footer #right{
+        gap: 36px;
+    }
+    
+    #right h4{
+        font-size: 3.5vw;
+    }
+}
